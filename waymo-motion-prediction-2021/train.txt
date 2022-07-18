@@ -1,0 +1,14 @@
+python train.py \
+    --train-data /home/harish/Documents/sem2/DL/project/git/dataset_npz/training_npz \
+    --dev-data /home/harish/Documents/sem2/DL/project/git/dataset_npz/validation_npz/ \
+    --save /media/harish/HK_backup/pkgs/waymo/weights/${MODEL_NAME} \
+    --model ${MODEL_NAME} \
+    --img-res 224 \
+    --in-channels 25 \
+    --time-limit 80 \
+    --n-traj 6 \
+    --lr 0.001 \
+    --batch-size 8 \
+    --n-epochs 120 \
+    --n-monitor-validate 100
+
